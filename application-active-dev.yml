@@ -1,0 +1,34 @@
+# 活动系统配置
+
+spring:
+  # Redis数据库
+  redis:
+    host: 39.106.100.78
+    port: 6300
+    password: HANchu123
+    database: 0
+    pool:
+      max-idle: 10
+      min-idle: 1
+      max-active: 10
+      max-wait: -1
+  data:
+    # Mongodb数据库
+    mongodb:
+      database: active-center
+      uri: mongodb://39.106.100.78:27010/active-center
+
+# 监控
+zipkin:
+  base-url: http://localhost:9411
+
+# logging日志
+logging:
+  file: logs/dev_active.log
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    org.springframework.web: ERROR
+    com.lili.activecenter: ERROR
+logstatus: false

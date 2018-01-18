@@ -1,0 +1,23 @@
+﻿项目名称                       描述           api访问加前缀
+
+activecenter                 活动中心        activeservice
+
+delivercenter                配送中心        deliverservice
+
+goodscenter                  商品中心        goodsservice
+
+imcenter                     推送消息中心     imservice
+
+ordercenter                  订单中心        orderservice
+
+paycenter                    支付中心        payservice
+
+searchcenter                 搜索中心        searchservice
+
+statistcenter                统计中心        statistservice
+
+usercenter                   用户中心        userservice
+
+evalucenter                  评价系统        evaluservice
+
+customcenter                 客服系统        customservice

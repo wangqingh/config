@@ -1,0 +1,42 @@
+# 统计系统配置
+
+spring:
+  # MySql数据库
+  datasource:
+      url: jdbc:mysql://47.94.12.210:3306/users?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: HANchu123
+      driverClassName: com.mysql.jdbc.Driver
+  data:
+    # Mongodb数据库
+    mongodb:
+      database: user-center
+      uri: mongodb://39.106.100.78:27010/user-center
+
+  # Redis数据库
+  redis:
+      host: 192.168.1.184
+      port: 6300
+      password: HANchu123
+      database: 8
+      pool:
+        max-active: 10
+        max-wait: -1
+        max-idle: 10
+        min-idle: 0
+      timeout: 0
+
+# 监控
+zipkin:
+  base-url: http://localhost:9411
+
+# logging日志
+logging:
+  file: logs/dev_user.log
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    org.springframework.web: ERROR
+    com.lili.usercenter: ERROR
+logstatus: false

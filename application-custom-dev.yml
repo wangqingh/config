@@ -1,0 +1,35 @@
+# 客服系统配置
+
+spring:
+  data:
+    # Mongodb数据库
+    mongodb:
+      database: custom-center
+      uri: mongodb://39.106.100.78:27010/custom-center
+  # Redis数据库
+  redis:
+    host: 39.106.100.78
+    port: 6300
+    password: HANchu123
+    database: 10
+    pool:
+      max-active: 10
+      max-wait: -1
+      max-idle: 10
+      min-idle: 0
+    timeout: 0
+
+# 监控
+zipkin:
+  base-url: http://localhost:9411
+
+# logging日志
+logging:
+  file: logs/dev_custom.log
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-2level [%thread] %logger : %msg%n"
+  level:
+    org.springframework.web: ERROR
+    com.lili.customcenter: ERROR
+logstatus: false
