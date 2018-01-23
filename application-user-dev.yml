@@ -26,9 +26,9 @@ spring:
         min-idle: 0
       timeout: 0
 
-# 监控
-zipkin:
-  base-url: http://47.94.12.210:9411
+  # 监控
+  zipkin:
+    base-url: http://47.94.12.210:9411
 
 # logging日志
 logging:
