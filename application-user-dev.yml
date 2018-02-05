@@ -28,7 +28,7 @@ spring:
 
   # 监控
   zipkin:
-    base-url: https://47.94.12.210:9411
+    base-url: http://47.94.12.210:9411
 
 # logging日志
 logging:
