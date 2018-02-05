@@ -20,7 +20,7 @@ spring:
 
   # 监控
   zipkin:
-    base-url: 47.94.12.210:9411
+    base-url: //47.94.12.210:9411
 
 # logging日志
 logging:
