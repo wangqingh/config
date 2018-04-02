@@ -11,7 +11,7 @@ spring:
     # es搜索
     elasticsearch:
           cluster-name: "lili-es"
-          cluster-nodes: 47.104.184.121:9200
+          cluster-nodes: 47.104.184.121:9300
     # Mongodb数据库
 
 
