@@ -3,7 +3,7 @@
 spring:
   # Redis数据库
   redis:
-    host: 39.106.100.78
+    host: 47.104.184.121
     port: 6300
     password: HANchu123
     database: 0
@@ -16,11 +16,11 @@ spring:
     # Mongodb数据库
     mongodb:
       database: active-center
-      uri: mongodb://39.106.100.78:27010/active-center
+      uri: mongodb://47.104.184.121:27010/active-center
 
   # 监控
   zipkin:
-    base-url: http://47.94.12.210:9411
+    base-url: http://47.104.194.42:9411
 
 # logging日志
 logging:
